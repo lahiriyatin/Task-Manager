@@ -12,10 +12,11 @@ const App = () => {
     <div className='bg-zinc-900 text-white h-screen p-2 relative'>
       <Router>
         <Routes>
-          <Route exact path="/" element={<HomePage/>}>
+          <Route path="/" element={<HomePage/>}>
           <Route index element={<AllTaskPage/>}/>
           <Route path="/pendingTasks" element={<PendingTaskPage/>}/>
           <Route path="/completedTasks" element={<CompletedTaskPage/>}/>
+          <Route path="/home" element={<AllTaskPage  />}/>
           </Route>
            <Route path='/signup' element={<SignUpPage />}/>
            <Route path='/login' element= {<LogInPage />}/>

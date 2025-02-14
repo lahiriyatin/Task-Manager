@@ -1,12 +1,12 @@
-import React from 'react'
-import Cards from '../components/HomeComponents/cards'
+import React from 'react';
+import Cards from '../components/HomeComponents/cards';
 
 const CompletedTaskPage = () => {
   return (
     <div>
-      <Cards home={"false"} />
+      <Cards home="completed" />
     </div>
-  )
-}
+  );
+};
 
-export default CompletedTaskPage
+export default CompletedTaskPage;
